@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="style.css">
+        <title>frame</title>
+        <style>
+            input[type=submit]{
+                background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  border-radius: 20px;
+  margin: 10px 15px;
+  padding:7px 17px ;
+  font-size: 20px;
+  position: absolute;
+  left:500px;
+  top:500px;
+  cursor: pointer;
+  border: none;
+}
+        </style>  
+    </head>
+    <body style="background-color:rgb(201, 201, 202);">
+        <img id="home" onclick="window.location.href='index.html';" class="home" value="click" src="images/home.png">
+    <h1 style="top:50px;right:830px;color:rgb(2, 2, 5);">FRAME</h1>
+
+    <!--form start-->
+    <form  action="frame.php" method="post">
+    <h1 style="top:140px;left:290px;color: aliceblue;line-height: 1.7;">
+        
+        <div class="first"><tr>
+            <td>date</td>
+            <td>&nbsp;&nbsp;<input type="date" name="date"  required=""></td>
+        </tr><br>
+</div>
+<div class="second">
+        <tr>
+            <td>size</td>
+            <td>&nbsp;&nbsp;<input type="text" name="size"  required=""></td>
+        </tr><br>
+</div>
+<div class="third">
+        <tr>
+            <td>customer name</td>
+            <td>&nbsp;&nbsp;<input type="text" name="cus_name"  required=""></td>
+        </tr><br>
+        </div>
+        <div class="fourth">
+        <tr>
+            <td>location</td>
+            <td>&nbsp;&nbsp;<input type="text" name="location"  required=""></td>
+        </tr><br>
+</div>
+<div class="fifth">
+        <tr>
+            <td>amount</td>
+            <td>&nbsp;&nbsp;<input type="number" name="amount"  required=""></td>
+        </tr><br>
+    </div>
+
+    </h1><input type="submit" style="top:570px;left:710px;width:120px;height:55px; font-weight: 800;" name="submit" value="submit">
+    </form>
+    </body>
+</html>
